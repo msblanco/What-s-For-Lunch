@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">What\'sForLunch</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Cargar">Cargando ...</string>
+    <string name="title_activity_menu_pricipal">Menu Pricipal</string>
+    <string name="btcomidaaleatoria">Comida Aleatoria</string>
+    <string name="btcomidas">Comidas</string>
+    <string name="btmercados">Mercados</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnGenerar">Generar</string>
+    <string name="textviewIngrediente">Ingrediente</string>
+    <string name="receta">Receta</string>
+    <string name="todas_las_recetas">Todas las recetas</string>
+    <string name="title_activity_acercade">Acerca de</string>
+    <string name="supermercados">Supermecados Cercanos</string>
+    <string name="naranja">#FAAC58</string>
+</resources>

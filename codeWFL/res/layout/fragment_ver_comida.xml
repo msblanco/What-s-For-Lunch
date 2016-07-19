@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="es.uvigo.esei.dm1415.p04.whatsforlunch.ClasesVisual.FragmentVerComida">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageViewComida"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@android:drawable/sym_def_app_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="NombreComida"
+                android:id="@+id/textViewNombreComida"
+                android:layout_marginTop="26dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageViewComida"
+                android:layout_toEndOf="@+id/imageViewComida" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/textviewIngrediente"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/imageViewComida"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+			<!--		AQUI QUIERO CAMBIAR ESTO	-->
+
+            <LinearLayout
+                android:id="@+id/listView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView4"
+                android:orientation="vertical"
+                android:scrollbars="horizontal" />
+
+			<!--	.............................	-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/receta"
+                android:id="@+id/textView5"
+                android:layout_below="@+id/listView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:textColor="#ffffffff"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@layout/my_shape"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

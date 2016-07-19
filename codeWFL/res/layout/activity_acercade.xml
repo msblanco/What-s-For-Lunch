@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="es.uvigo.esei.dm1415.p04.whatsforlunch.ClasesVisual.Acercade">
+    <ImageView
+        android:id="@+id/selected_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/my_bottom_layout"
+        android:layout_margin="10dip"  />
+
+    <RelativeLayout
+        android:id="@+id/my_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="120dip"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray" >
+
+        <TextView
+            android:id="@+id/txtMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#ff7ac6ff"
+            android:text="Deslize para ver los integrantes"
+            android:textColor="#ff000000"
+            android:gravity="center"/>
+
+        <Gallery
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:layout_marginTop="5dip"
+            android:layout_alignParentBottom="true"
+            android:spacing="40dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

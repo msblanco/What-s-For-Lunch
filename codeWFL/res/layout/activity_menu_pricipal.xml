@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.uvigo.esei.dm1415.p04.whatsforlunch.ClasesVisual.MenuPricipal"
+    android:background="#ffdafff6">
+
+    <RelativeLayout
+        android:id="@+id/contenedor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/barramenu" />
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/barramenu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:columnCount="3"
+        android:rowCount="1"
+        android:paddingTop="4dp">
+
+
+
+        <ImageButton
+            android:id="@+id/btn_comidaaleatoria"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/aleatorio"
+            android:scaleType="fitCenter"
+            android:background="#ffffffff"/>
+        <ImageButton
+            android:id="@+id/btn_comidas"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/comida"
+            android:scaleType="fitCenter"
+            android:background="#ffffffff"/>
+        <ImageButton
+            android:id="@+id/btn_mercados"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/mercado"
+            android:scaleType="fitCenter"
+            android:background="#ffffffff"/>
+
+    </GridLayout>
+</RelativeLayout>
